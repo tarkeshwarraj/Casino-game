@@ -1,0 +1,190 @@
+body {
+    background: linear-gradient(#002e2e, #004f5a);
+    font-family: "Roboto", sans-serif;
+}
+
+.text-center {
+    color: white;
+}
+
+#roll {
+    text-align: center;
+}
+.paper {
+    background-color: rgb(48, 108, 48);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+.img-div {
+    position: relative;
+    height: 250px; /* Adjust this height as needed */
+}
+.img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.input-field {
+    position: absolute;
+    bottom: 10px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%; /* Adjust width to make input smaller */
+}
+
+.bet-input {
+    font-size: 0.8rem; /* Make text size smaller if needed */
+}
+
+.selected {
+    border: 10px solid rgb(65, 65, 78); /* Example border style */
+    box-shadow: 0 0 5px rgba(82, 82, 91, 0.5); /* Example box shadow */
+    /* Add any other styles to indicate selection */
+}
+
+.select {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 991.98px) {
+    #roll {
+        margin: 10px;
+    }
+
+    .dice-container {
+        /* display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; */
+        min-height: 150px;
+        min-width: 100%;
+    }
+
+    .img-div {
+        position: relative;
+        height: 120px; /* Adjust this height as needed */
+        width: 33.333%;
+    }
+    .img-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+    .input-field {
+        position: absolute;
+        bottom: 10px;
+        border-radius: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        width: 50%; /* Adjust width to make input smaller */
+    }
+    .bet-input {
+        font-size: 0.5rem; /* Make text size smaller if needed */
+        padding: 2px 5px;
+    }
+
+    .close {
+        color: #aaa;
+        text-align: right;
+        font-size: 20px;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+        padding: 0 20px;
+    }
+
+    .modal-content {
+        background-color: #edff93;
+        border: 1px solid #888;
+        width: 200px; /* Width of the modal */
+        height: 80px; /* Height of the modal */
+        position: absolute;
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Centering trick */
+        text-align: center;
+        /* padding: 20px; */
+    }
+}
+
+/* FLOTING DIV */
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #edff93;
+    border: 1px solid #888;
+    width: 400px; /* Width of the modal */
+    height: 100px; /* Height of the modal */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering trick */
+    text-align: center;
+    /* padding: 20px; */
+}
+
+#resultMessage {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.close {
+    color: #aaa;
+    text-align: right;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#custom {
+    color: rgb(238, 238, 112);
+}
+
+.dropdown-item a {
+    color: black;
+}

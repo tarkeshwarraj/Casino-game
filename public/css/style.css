@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* background-color: hsla(210, 57%, 26%, 1); */
+    background-color: #0e100f;
+}
+
+.main {
+    min-height: 80vh;
+    flex-grow: 1;
+}
+
+.navbar {
+    /* background-color: hsla(208, 100%, 62%, 1); */
+    border-bottom: 1px solid grey;
+}
+
+.nav-link.nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.1px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+/* Custom CSS for sticky bottom bar*/
+.sticky-bottom-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /*optional: add a shadowfor better visibility */
+    z-index: 1030; /*Ensure it appers above other content */
+}
+
+/* Adjust styles for the links/buttons in the bottom bar */
+.sticky-bottom-bar .nav-link,
+.sticky-bottom-bar .btn {
+    margin: 0 10px;
+}
+
+.bottom-navigation__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-navigation__item {
+    flex: 1;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        display: none !important;
+    }
+    .navbar-nav .dropdown {
+        display: none !important;
+    }
+    .navbar-nav.ms-auto .nav-item {
+        margin-left: 0;
+    }
+
+    .btn-sm-mobile {
+        padding: 0.15rem 0.3rem;
+        font-size: 0.675rem; /* Adjust font size smaller for mobile */
+    }
+    .sticky-bottom-bar {
+        display: block;
+    }
+
+    .card {
+        background-color: #0e100f;
+        border: 2px solid rgb(248, 248, 172);
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.bottom-navigation__item button,
+.bottom-navigation__item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.bottom-navigation__item span {
+    align-items: center;
+}
+.bottom-navigation__item button span,
+.bottom-navigation__item a span {
+    display: block;
+}
+
+.bottom-navigation__item button span:first-child,
+.bottom-navigation__item a span:first-child {
+    font-size: 20px; /* Adjust icon size as needed */
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card CSS */
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+@media (min-width: 991.98px) {
+    /* whole card */
+    .card {
+        background-color: #0e100f;
+        border: 2px solid rgb(248, 248, 172);
+    }
+
+    /* image card */
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        /* object-fit: cover; */
+        display: block; /* Ensure image behaves as a block element */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+    }
+}
+
+/* Footer Start */
+.footer {
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #0e100f;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.footer-nav li {
+    margin-right: 20px;
+}
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-nav a:hover {
+    color: #f3c623;
+}
+.footer-social {
+    margin-top: 10px;
+}
+.footer-social a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+.footer-social a:hover {
+    color: #f3c623;
+}
+.footer-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
